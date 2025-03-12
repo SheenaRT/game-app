@@ -31,9 +31,9 @@ const iconMap: {[key: string]: IconType}= {
 }
 
   return (
-    <HStack marginY={1}>
+    <HStack marginY={1} spacing='1.1px'>
       {platforms.map((platform) => (
-        <Icon color='#6c757d' as={iconMap[platform.slug]}/>
+        <Icon color='#6c757d' as={iconMap[platform.slug]} />
       ))}
     </HStack>
   );
